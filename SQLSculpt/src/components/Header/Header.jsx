@@ -1,11 +1,12 @@
 import { projectName } from "../../constants";
-import { Text } from "@innovaccer/design-system";
+import { Heading } from "@innovaccer/design-system";
+import "./styles.css";
 
 const Header = () => {
   return (
-    <Text weight="strong" size="large">
+    <Heading className="nav" size="xl" data-test="heading">
       {projectName}
-    </Text>
+    </Heading>
   );
 };
 
