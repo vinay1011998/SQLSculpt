@@ -1,5 +1,13 @@
+import SqlEditor from "../SqlEditor/SqlEditor";
+import Queries from "../Queries/Queries";
+
 const Body = () => {
-  return <div>Body</div>;
+  return (
+    <>
+      <SqlEditor />
+      <Queries />
+    </>
+  );
 };
 
 export default Body;
