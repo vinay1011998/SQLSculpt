@@ -16,3 +16,23 @@ export const predefinedQueryList = [
 export const noLabelFound = "SELECT * FROM products WHERE price < 50;";
 export const querySectionLabel = "Predefined Queries";
 export const useQueryButton = "Use this Query";
+export const expandableButton = "show queries";
+export const hideExpandableButton = "hide queries";
+export const sideSheetHeading = "The Kong AI";
+export const sideSheetSubHeading = "SQL Query Explanation and Optimization with ChatGPT: The Kong AI Project";
+export const selectedQueryLabel = "Selected Query";
+export const sideSheetTriggerButton = "Try out The Kong AI";
+export const promptexplainLabel = "Explain this query";
+export const promptOptimizeLabel = "Optimize this query";
+export const chipGroupRenderer = [
+  {
+    label: promptexplainLabel,
+    icon: "school",
+    value: "explain"
+  },
+  {
+    label: promptOptimizeLabel,
+    icon: "bolt",
+    value: "optimize"
+  }
+];

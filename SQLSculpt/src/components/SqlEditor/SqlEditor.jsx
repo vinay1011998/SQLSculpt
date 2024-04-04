@@ -2,6 +2,7 @@ import { Textarea, Heading, Button, Icon } from "@innovaccer/design-system";
 
 import { editorName, runQueryButtonName, textareaPlaceholder } from "../../constants";
 import "./styles.css";
+import KongAISideSheet from "../KongAISideSheet/KongAiSideSheet";
 
 const SqlEditor = () => {
   return (
@@ -19,10 +20,19 @@ const SqlEditor = () => {
           data-test={"text-area"}
           className="mt-2"
         />
-
-        <Button appearance="primary" size="regular" className="button-container mt-4" data-test="submit-query-btn">
-          {runQueryButtonName}
-        </Button>
+        <div className="button-container mt-4 d-flex">
+          <KongAISideSheet />
+          <Button
+            appearance="primary"
+            size="regular"
+            data-test="submit-query-btn"
+            className="ml-2"
+            icon="speed"
+            iconAlign="left"
+          >
+            {runQueryButtonName}
+          </Button>
+        </div>
       </div>
     </div>
   );
