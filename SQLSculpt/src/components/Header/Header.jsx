@@ -1,4 +1,5 @@
 import { Heading } from "@innovaccer/design-system";
+
 import { projectName } from "../../constants";
 import "./styles.css";
 

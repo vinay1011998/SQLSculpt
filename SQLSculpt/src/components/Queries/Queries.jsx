@@ -12,7 +12,7 @@ import {
 } from "../../constants";
 import "../SqlEditor/styles.css";
 
-const Queries = () => {
+const Queries = ({ setSelectedQuery, setIsQueryExecuted }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const getLinkButton = () => {
     return (
@@ -33,25 +33,38 @@ const Queries = () => {
       return (
         <Message
           className="message-container mt-4 mb-4"
+          data-test={_get(queryItem, "label", noLabelFound)}
           key={_get(queryItem, "id", idx)}
-          actions={<LinkButton>{useQueryButton}</LinkButton>}
+          actions={
+            <LinkButton
+              onClick={() => {
+                setSelectedQuery(_get(queryItem, "id", "-1")), setIsExpanded(false), setIsQueryExecuted(false);
+              }}
+            >
+              {useQueryButton}
+            </LinkButton>
+          }
         >
           <Text weight="strong">{_get(queryItem, "label", noLabelFound)}</Text>
         </Message>
       );
     });
   };
-  return (
-    <div className="wrapper">
-      <div className="d-flex">
-        <Heading size="m" data-test="heading-for-predefined-queries">
-          <Icon size={24} name="query_stats" className="icon" /> {querySectionLabel}
-        </Heading>
-        {getLinkButton()}
+
+  const renderBody = () => {
+    return (
+      <div className="wrapper">
+        <div className="d-flex">
+          <Heading size="m" data-test="heading-for-predefined-queries">
+            <Icon size={24} name="query_stats" className="icon" /> {querySectionLabel}
+          </Heading>
+          {getLinkButton()}
+        </div>
+        {isExpanded && renderQuery()}
       </div>
-      {isExpanded && renderQuery()}
-    </div>
-  );
+    );
+  };
+  return renderBody();
 };
 
 export default Queries;
