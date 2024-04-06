@@ -1,13 +1,16 @@
+import "@innovaccer/design-system/css";
+
 import Header from "./components/Header/Header";
 import Body from "./components/Body/Body";
-import Footer from "./components/Footer/Footer";
-import "@innovaccer/design-system/css";
+import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
+
 const App = () => {
   return (
     <>
       <Header />
-      <Body />
-      <Footer />
+      <ErrorBoundary>
+        <Body />
+      </ErrorBoundary>
     </>
   );
 };
