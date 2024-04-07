@@ -56,6 +56,45 @@ To run the application locally, follow these steps:
 
 4. Access the application in your web browser at `http://localhost:5173`.
 
+## Ideation
+
+### Features Enhancement
+- **Running Selected Query**: Users can select a specific query to run, enhancing the usability of the application.
+- **Tabular Format**: Displaying query results in a tabular format for easy interpretation.
+- **Pagination**: Implementing pagination for large datasets, allowing users to navigate through data efficiently.
+- **AI Integration**: Utilizing Kong AI for additional features:
+  - **Query Explanation**: Providing explanations for selected queries to aid understanding.
+  - **Query Optimization**: Optimizing queries using AI to improve performance.
+
+### Design Focus
+- **User Accessibility**: Prioritizing user accessibility in design, ensuring ease of use and navigation.
+- **Query Visibility**: Ensuring queries are easily visible and searchable, possibly incorporating a sidebar for quick access.
+- **AI Integration**: Incorporating AI features in a separate sidebar for seamless interaction.
+
+### AI Features
+- **Explain Query**: Enabling users to understand complex queries better by providing detailed explanations.
+- **Optimize Query**: Offering AI-driven optimization for queries, enhancing data analyst productivity and efficiency.
+
+These enhancements aim to improve user experience, streamline query execution, and leverage AI capabilities to aid data analysis processes effectively.
+
+### Optimization
+
+Through meticulous optimization efforts, significant enhancements have been achieved, notably increasing the Lighthouse performance score from 55% to over 80%. Key techniques employed include:
+
+1. **Performance Analysis**: Utilizing Chrome Lighthouse, the performance section was scrutinized, initially yielding a score of 55%.
+
+2. **Lazy Loading**: By implementing lazy loading, resources are deferred until necessary, resulting in reduced initial page load times. Extraneous imports, such as the KONG AI API, were omitted, mitigating the inclusion of unused JavaScript.
+
+3. **Immediate Rendering**: Prioritizing swift page rendering, core components like the main editor and queries are promptly displayed without additional overhead.
+
+4. **Error Boundaries**: Robust error handling mechanisms, in the form of error boundaries, have been integrated to ensure graceful handling of runtime errors, thereby enhancing stability and user experience.
+
+These optimization endeavors have significantly boosted performance metrics, resulting in a more responsive and efficient application.
+
+
+![Optimization Screenshot](https://drive.google.com/file/d/1WyAx8aBIqQejdOM0VEV05hysVM0QTae_/view?usp=sharing)
+![Video Link]()
+
 ### Contributions
 
 Contributions are welcome! If you have any suggestions, improvements, or feature requests, please open an issue or submit a pull request.
