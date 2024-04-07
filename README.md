@@ -92,8 +92,8 @@ Through meticulous optimization efforts, significant enhancements have been achi
 These optimization endeavors have significantly boosted performance metrics, resulting in a more responsive and efficient application.
 
 
-![Optimization Screenshot](https://drive.google.com/file/d/1WyAx8aBIqQejdOM0VEV05hysVM0QTae_/view?usp=sharing)
-![Video Link]()
+[Optimization Screenshot](https://drive.google.com/file/d/1WyAx8aBIqQejdOM0VEV05hysVM0QTae_/view?usp=sharing)
+[Video Link](https://drive.google.com/file/d/1gFfiLBLZZEPdZ3eSXcSOctX71tGE0PNQ/view?usp=drive_link)
 
 ### Contributions
 
